@@ -37,6 +37,23 @@ footer {
     clear: both;
 }
 
+#click-image {
+  font-size: 30px;
+}
+
+.click-image-container {
+display: inline-block;
+border: 1px solid var(--port-gore);
+width: fit-content;
+padding: 10px;
+}
+
+.purple-diamond {
+  display: inline;
+  height: 28px;
+  width: 28px;
+}
+
 .about-header {
   background-color: #ffcfda;
   z-index: 0;
@@ -260,6 +277,10 @@ footer {
 
   .full-img.open {
     transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  #click-image {
+    font-size: 18px;
   }
 }
 
