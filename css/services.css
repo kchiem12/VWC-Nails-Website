@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;1,200;1,300&display=swap');
+
+:root {
+  --port-gore: #292a5e;
+}
+
+html {
+  overflow-x: hidden;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+footer {
+  position: relative;
+}
+
+.container-top {
+  position: relative;
+  height: 500px;
+}
+
+.bolden {
+  font-weight: bolder;
+}
+
+.navbar-container {
+  z-index: 2;
+}
+
+.about-header {
+  z-index: 0;
+  position: absolute;
+  top: 110px;
+  background-image: url("../imgs/reimgstoresizebanners/IMG_1065.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+.about-header-text {
+  padding-top: 130px;
+  color: #ffcfda;
+  text-align: center;
+}
+
+.about-text-container {
+  display: inline-block;
+  padding: 30px;
+  border: 1px solid #ffcfda;
+}
+
+.schedule-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 160px;
+}
+
+.schedule {
+  display: inline-block;
+  background: rgba(217, 217, 217, 0.3);
+  border-radius: 7px;
+  max-width: 600px;
+  min-width: 70%;
+  font-size: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.schedule h1 {
+    font-family: "Jost", "sans-serif";
+    font-weight: 200;
+}
+
+.image-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  justify-content: center;
+  grid-auto-rows: minmax(min-content, max-content);
+  margin-left: 20px;
+  margin-right: 20px;
+  grid-gap: 20px;
+  background-color: lightgray;
+}
+
+.service-container {
+  display: inline-block;
+  z-index: 0;
+  /* background: lightgray; */
+  padding: 5px;
+  height: fit-content;
+}
+
+.service-img-preview {
+  width: 100%;
+  height: auto;
+  background-image: url(../imgs/sample_nail_image.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service-container p {
+}
+
+.image-table img {
+  width: 100%;
+  height: 50%;
+  /* top: 0; */
+  object-fit: cover;
+}
+
+.service-menu-container {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.menu-background-container {
+  background-image: url(../imgs/background-g010112b47_1920.jpg);
+  padding: 10px;
+}
+
+.menu-image-container::before {
+  content: "";
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: cyan;
+
+  z-index: -1;
+}
+
+.menu-image-container {
+  display: inline;
+  height: fit-content;
+}
+
+figure {
+  display: inline;
+  margin: 0;
+  padding: 10px;
+}
+
+figure img {
+  width: 40%;
+}
+
+.menu-specifics {
+  border-radius: 10px;
+  width: 70%;
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: rgba(183, 183, 183, 0.3);
+}
+
+.linewrapper {
+  width: 100%;
+  display: flex;
+  color: var(--port-gore);
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.linewrapper-oneline {
+  width: 100%;
+  display: flex;
+  color: var(--port-gore);
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.middle {
+  border-bottom: 1px dotted black;
+  flex-grow: 1;
+  margin: 0 5px;
+}
+.ingredients {
+  color: #bbb;
+  margin-bottom: 1em;
+}
+
+.linewrapper .subsection {
+  font-size: 23px;
+}
+
+li {
+  margin-left: 25px;
+}
+
+.menu-title-section {
+  color: black;
+  font-weight: bolder;
+  font-size: 34px;
+}
+
+.black-diamond {
+  display: inline;
+  height: 24px;
+  width: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-header {
+    top: 80px;
+  }
+
+  .menu-image-container {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+
+  figure img {
+    width: 100%;
+    display: block;
+  }
+
+  .manicures-row {
+    text-align: center;
+  }
+
+  .menu-specifics {
+    width: 90%;
+    display: block;
+  }
+
+  .container-top {
+    height: 479px;
+  }
+
+  .menu-title-section {
+      font-size: 22px;
+  }
+
+  .subsection {
+      font-size: 19px;
+  }
+
+  .black-diamond {
+    height: 14px;
+    width: 14px;
+  }
+}

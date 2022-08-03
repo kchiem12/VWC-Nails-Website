@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap");
+
+/* Set global variables to use */
+:root {
+  --navbar-color: #ffcfda;
+  --dark-purple: #42385d;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #ffcfda, #42385d);
+}
+
+.introduction {
+  display: block;
+  width: 100%;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: change 30s infinite ease-in-out;
+}
+
+.preload-images {
+  background: url("../imgs/reimgstoresizebanners/manicure-image-1.jpg") no-repeat -9999px -9999px;
+  background: url("../imgs/reimgstoresizebanners/manicure-image-1.jpg") no-repeat -9999px -9999px,
+    url("../imgs/reimgstoresizebanners/nail-clippings-1.jpg") no-repeat -9999px -9999px,
+    url("../imgs/reimgstoresizebanners/fish-tank.jpeg") no-repeat -9999px -9999px,
+    url("../imgs/reimgstoresizebanners/color_wheel_with_waiting_room.JPEG") no-repeat -9999px -9999px,
+    url("../imgs/reimgstoresizebanners/nail-design-3.jpg") no-repeat -9999px -9999px;
+}
+
+.contact-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffcfda;
+  display: block;
+  margin-top: 70px;
+  background-color: rgb(135, 58, 58);
+}
+
+.contact-button:hover {
+}
+
+.intro-container {
+  width: 100%;
+  text-align: center;
+}
+
+.intro-text {
+  padding-top: 190px;
+}
+
+.introtext-container {
+  border: 1px solid gray;
+  background-color: rgba(26, 26, 26, 0.7);
+  display: inline-block;
+  font-family: "Jost", sans-serif;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+}
+
+@keyframes change {
+  0%,
+  100% {
+    background-image: url("../imgs/manicure-image-1.jpg");
+  }
+  20% {
+    background-image: url("../imgs/nail-clippings-1.jpg");
+  }
+  40% {
+    background-image: url("../imgs/fish-tank.jpeg");
+  }
+  60% {
+    background-image: url("../imgs/color_wheel_with_waiting_room.JPEG");
+  }
+  80% {
+    background-image: url("../imgs/nail-design-3.jpg");
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .introtext-container {
+    font-size: 18px !important;
+  }
+
+  .contact-button {
+    margin-top: 70px;
+    font-size: 18px;
+  }
+
+  .copyright {
+    display: block;
+    font-size: 12px;
+  }
+
+  .contact-info {
+    padding-top: 50px;
+  }
+
+  .contact-info p,
+  .copyright p {
+    width: 100%;
+    font-size: 12px;
+  }
+}

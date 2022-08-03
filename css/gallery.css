@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+:root {
+    --port-gore: #292a5e;
+  }
+
+html {
+    height: 100%;
+  background: #ffcfda;
+  overflow-x: hidden;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+
+body {
+  position: relative;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.container-top {
+    background-color: #ffcfda;
+  position: relative;
+  height: 550px;
+}
+
+footer {
+    position: relative;
+    margin-top: -100px;
+    clear: both;
+}
+
+.about-header {
+  background-color: #ffcfda;
+  z-index: 0;
+  position: absolute;
+  top: 110px;
+  background-image: linear-gradient(rgba(26, 26, 26, 0.3), rgba(26, 26, 26, 0.3)),url("../imgs/reimgstoresizebanners/nail_polish_shelf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+.about-header-text {
+  padding-top: 130px;
+  color: #ffcfda;
+  text-align: center;
+}
+
+.about-text-container {
+  display: inline-block;
+  padding: 30px;
+  border: 1px solid #ffcfda;
+}
+
+.about-content {
+  display: block;
+  background-color: #ffcfda;
+  padding: 20px;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-container {
+  z-index: 5;
+}
+
+.table-title {
+    font-size: 30px;
+    color: white;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.image-table-container {
+  background-color: #42385d;
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 5%;
+  padding-top: 0;
+}
+
+.image-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  justify-content: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 100px;
+  grid-gap: 20px;
+  overflow: hidden;
+}
+
+.image-container {
+  z-index: 0;
+  overflow: hidden;
+}
+
+.image-table img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 100ms;
+  cursor: pointer;
+}
+
+.image-container img:hover {
+  transform: scale(1.2);
+  z-index: 0;
+  transition: all 100ms;
+}
+
+.modal {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 12;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  /* To make the element not clickable */
+  pointer-events: none;
+  transition: 200ms ease-out;
+}
+
+.modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.full-img {
+  position: absolute;
+  max-height: 100vh;
+  max-width: 90%;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  transition: all 250ms ease-out;
+}
+
+.full-img.open {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.modal p {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+
+  /* This is always used to help center an element */
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+
+.gradient-transition {
+    position: relative;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(255, 207, 218, 0.9), rgba(255, 207, 218, 0.9) 25%, rgba(255, 207, 218, 0.8) 75%, rgba(66, 56, 93, 1) 100%), url('../imgs/roses_colors_.jpg');
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding-bottom: 90px;
+
+    line-height: 200px;
+}
+
+.gradient-transition h1 {
+    display: block;
+    margin: 0;
+    top: 50%;
+}
+
+.bottom-half-gallery {
+    position: relative;
+    background-color: #42385d;
+    text-align: center;
+    padding: 30px 100px 100px 100px;
+}
+
+.bottom-half-gallery h1 {
+    display: block;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+/* Re-use from the About page */
+.about-content {
+    display: block;
+    padding: 20px;
+    font-family: "Jost", sans-serif;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  .title-section {
+    display: inline-block;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    font-size: 40px;
+    line-height: 40px;
+    color: black;
+    border-bottom: 1px solid var(--port-gore);
+    font-weight: 700;
+  }
+  
+  .content {
+    line-height: 30px;
+    font-size: 24px;
+    text-align: center;
+    color: var(--port-gore);
+    font-weight: 0;
+  }
+
+@media screen and (max-width: 768px) {
+  .about-header {
+    top: 80px;
+  }
+
+  .container-top {
+    height: 525px;
+  }
+
+  .image-table{
+    margin-left: 0px;
+    margin-right: 0px;
+    grid-template-columns: 0.7fr;
+  }
+  
+  .bottom-half-gallery {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .full-img.open {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+/* Footer fix for Opera */
+body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+  }
