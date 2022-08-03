@@ -11,7 +11,7 @@ const titleLogo = document.querySelector('.titlelogo');
 
 titleLogo.addEventListener('click', () => {
     window.location.href = "http://www.vwcnails.com"
-    window.location.replace('index.html');
+    window.location.replace('index');
 });
 
 const menuNav = document.querySelector('.navbar-container');
