@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;500;900&display=swap");
 
 /* Set global variables to use */
 :root {
@@ -41,12 +41,11 @@ body {
   font-size: 20px;
   color: #ffcfda;
   display: block;
-  margin-top: 70px;
+  margin-top: 100px;
   background-color: rgb(135, 58, 58);
 }
 
-.contact-button:hover {
-}
+
 
 .intro-container {
   width: 100%;
@@ -62,9 +61,15 @@ body {
   background-color: rgba(26, 26, 26, 0.7);
   display: inline-block;
   font-family: "Jost", sans-serif;
+  font-weight: 200;
   font-size: 30px;
   color: white;
   padding: 10px;
+}
+
+.name {
+  font-weight: 500;
+  color: #ffcfda;
 }
 
 @keyframes change {
@@ -92,7 +97,7 @@ body {
   }
 
   .contact-button {
-    margin-top: 70px;
+    margin-top: 100px;
     font-size: 18px;
   }
 
