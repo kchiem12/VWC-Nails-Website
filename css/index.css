@@ -11,6 +11,7 @@ body {
 }
 
 .introduction {
+  background-image: url(../imgs/reimgstoresizebanners/manicure-image-1.jpg), url(../imgs/reimgstoresizebanners/nail-clippings-1.jpg), url(../imgs/fish-tank.jpeg), url(../imgs/reimgstoresizebanners/color_wheel_with_waiting_room.JPEG), url(../imgs/reimgstoresizebanners/nail-design-3.jpg);
   display: block;
   width: 100%;
   background-position: center;
@@ -20,14 +21,14 @@ body {
   animation: change 30s infinite ease-in-out;
 }
 
-.preload-images {
+/* .preload-images {
   background: url("../imgs/reimgstoresizebanners/manicure-image-1.jpg") no-repeat -9999px -9999px;
   background: url("../imgs/reimgstoresizebanners/manicure-image-1.jpg") no-repeat -9999px -9999px,
     url("../imgs/reimgstoresizebanners/nail-clippings-1.jpg") no-repeat -9999px -9999px,
     url("../imgs/reimgstoresizebanners/fish-tank.jpeg") no-repeat -9999px -9999px,
     url("../imgs/reimgstoresizebanners/color_wheel_with_waiting_room.JPEG") no-repeat -9999px -9999px,
     url("../imgs/reimgstoresizebanners/nail-design-3.jpg") no-repeat -9999px -9999px;
-}
+} */
 
 .contact-button {
   position: absolute;
@@ -75,19 +76,19 @@ body {
 @keyframes change {
   0%,
   100% {
-    background-image: url("../imgs/manicure-image-1.jpg");
+    background-image: url("../imgs/reimgstoresizebanners/manicure-image-1.jpg");
   }
   20% {
-    background-image: url("../imgs/nail-clippings-1.jpg");
+    background-image: url("../imgs/reimgstoresizebanners/nail-clippings-1.jpg");
   }
   40% {
-    background-image: url("../imgs/fish-tank.jpeg");
+    background-image: url("../imgs/reimgstoresizebanners/fish-tank.jpeg");
   }
   60% {
-    background-image: url("../imgs/color_wheel_with_waiting_room.JPEG");
+    background-image: url("../imgs/reimgstoresizebanners/color_wheel_with_waiting_room.JPEG");
   }
   80% {
-    background-image: url("../imgs/nail-design-3.jpg");
+    background-image: url("../imgs/reimgstoresizebanners/nail-design-3.jpg");
   }
 }
 
